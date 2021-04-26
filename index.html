@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font/font.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Planet</title>
+</head>
+
+<body>
+  <div class="modal fade proposal_modal" id="contactModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Qiymət təklifi al</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" name="fullname" required placeholder="Ad, Soyad">
+            <input type="number" name="number" required placeholder="Telefon nömrəniz">
+            <input type="text" name="company" required placeholder="Təmsil etdiyniz şirkət">
+            <textarea name="notes" id="" cols="30" rows="10" required placeholder="Qeydləriniz"></textarea>
+            <button type="submit">Göndər</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Planet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Baş səhifə <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Şirkət haqqında</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Yükdaşıma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Korporativ əməkdaşlıq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Avtopark</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Əlaqə</a>
+          </li>
+        </ul>
+        <div class="right_side my-2 my-lg-0">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button">Qiymət təklifi al</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/advantage.svg" alt="advantage">
+          <h2>Get a ride</h2>
+          <p>Bolt offers you a ride in minutes.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/advantage.svg" alt="advantage">
+          <h2>Get a ride</h2>
+          <p>Bolt offers you a ride in minutes.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/advantage.svg" alt="advantage">
+          <h2>Get a ride</h2>
+          <p>Bolt offers you a ride in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="load">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 content">
+          <h3>About Us</h3>
+          <p>TrackMais is the leader in Automotive IoT. Our mission is to increase the efficiency, safety, and
+            sustainability of the operations that power our economy.</p>
+          <p>TrackMais portfolio of complete Internet of Things (“IoT”) solutions combine hardware, software, and cloud
+            to bring real-time visibility, analytics, and AI to operations. We serve customers across diverse sizes and
+            industries, from transportation and logistics to field services, food production, energy, construction,
+            local governments, and manufacturing.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="truckImgContainer">
+            <img src="img/truckabove.png" alt="truckabove" class="truckabove">
+            <div class="line">
+              <img src="img/line.png" alt="" class="lineImg">
+              <img src="img/arrow.png" data-aos="fade-down-left" class="arrow" alt="">
+              <img src="img/station.png" class="station" alt="">
+            <img src="img/ truck.png" data-aos="fade-left" class="truckImg" alt="truck">
+
+            </div>
+            <img src="img/pattern.png"  data-aos="fade-up" class="pattern" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/fontawesome.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.slim.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    });
+  </script>
+</body>
+
+</html>

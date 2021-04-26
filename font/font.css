@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('TTFirsNeue-Regular.eot');
+    src: local('TT Firs Neue Regular'), local('TTFirsNeue-Regular'),
+        url('TTFirsNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeue-Regular.woff2') format('woff2'),
+        url('TTFirsNeue-Regular.woff') format('woff'),
+        url('TTFirsNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('TTFirsNeue-Light.eot');
+    src: local('TT Firs Neue Light'), local('TTFirsNeue-Light'),
+        url('TTFirsNeue-Light.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeue-Light.woff2') format('woff2'),
+        url('TTFirsNeue-Light.woff') format('woff'),
+        url('TTFirsNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('TTFirsNeue-ExtraLight.eot');
+    src: local('TT Firs Neue ExtraLight'), local('TTFirsNeue-ExtraLight'),
+        url('TTFirsNeue-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeue-ExtraLight.woff2') format('woff2'),
+        url('TTFirsNeue-ExtraLight.woff') format('woff'),
+        url('TTFirsNeue-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('TTFirsNeue-Medium.eot');
+    src: local('TT Firs Neue Medium'), local('TTFirsNeue-Medium'),
+        url('TTFirsNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeue-Medium.woff2') format('woff2'),
+        url('TTFirsNeue-Medium.woff') format('woff'),
+        url('TTFirsNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('TTFirsNeue-Thin.eot');
+    src: local('TT Firs Neue Thin'), local('TTFirsNeue-Thin'),
+        url('TTFirsNeue-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TTFirsNeue-Thin.woff2') format('woff2'),
+        url('TTFirsNeue-Thin.woff') format('woff'),
+        url('TTFirsNeue-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
