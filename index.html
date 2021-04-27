@@ -13,34 +13,35 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+
   <title>Planet</title>
 </head>
 
 <body>
 
   <div class="modal fade proposal_modal" id="contactModal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Qiymət təklifi al</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <input type="text" name="fullname" required placeholder="Ad, Soyad">
-            <input type="number" name="number" required placeholder="Telefon nömrəniz">
-            <input type="text" name="company" required placeholder="Təmsil etdiyniz şirkət">
-            <textarea name="notes" id="" cols="30" rows="10" required placeholder="Qeydləriniz"></textarea>
-            <button type="submit">Göndər</button>
-          </form>
-        </div>
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Qiymət təklifi al</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="text" name="fullname" required placeholder="Ad, Soyad">
+                        <input type="number" name="number" required placeholder="Telefon nömrəniz">
+                        <input type="text" name="company" required placeholder="Təmsil etdiyniz şirkət">
+                        <textarea name="notes" id="" cols="30" rows="10" required placeholder="Qeydləriniz"></textarea>
+                        <button type="submit">Göndər</button>
+                    </form>
+                </div>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Planet</a>
@@ -71,7 +72,7 @@
           </li>
         </ul>
         <div class="right_side my-2 my-lg-0">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="button">Qiymət təklifi al</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#contactModal" type="button">Qiymət təklifi al</button>
         </div>
       </div>
     </div>
@@ -171,11 +172,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img class="callToActionImg" src="img/callToAction.png" alt="">
+          <img class="callToActionImg" src="img/callToActionImg1.webp" alt="">
         </div>
         <div class="col-md-5 offset-md-1 proposalCol">
-          <h4>
-            Qiymət təklifi al</h4>
+          <h4>Yükdaşıma qiymətləri sorgusu</h4>
+            <p>Size ozel endirimli yukdasima qiymetlerini elde etmek ucun formu doldurun ve en qisa zamanda teklif size teqdim olunsun</p>
           <button type="button"><span>Qiymət təklifi al</span></button>
         </div>
       </div>
