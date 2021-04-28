@@ -3,7 +3,7 @@ $(document).ready(function () {
         duration: 1000
     });
 
-
+    // call to action animation
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -29,7 +29,13 @@ $(document).ready(function () {
     $(window).scroll(function (event) {
         if ($(window).scrollTop() >= scrollTop) {
             scrol = $(window).scrollTop() - $('.callToAction').offset().top;
-            $('.callToActionImg').css("transform", "translateX(" + (scrol * 0.6) + "px)")
+
+            $('.callToActionImg').css("transform", "translateX(" + (scrol * 0.3) + "px) rotateY(180deg)")
         }
     })
+
+
+
+  
+
 });
