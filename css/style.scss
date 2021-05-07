@@ -9,6 +9,8 @@
 
 // $primaryColor:#eb7353;
 $primaryColor:#37a2aa;
+$secondaryColor:#F08F4D;
+
 
 a {
     text-decoration: none !important;
@@ -95,7 +97,7 @@ footer {
                 border: none;
 
                 &:hover {
-                    background-color: #1e7e34;
+                    background-color: #3CB4BD;
                 }
             }
         }
@@ -104,7 +106,7 @@ footer {
 
 .navbar {
     padding-top: 0;
-    padding-bottom:0;
+    padding-bottom: 0;
 
     .nav-item {
         padding-right: 19px !important;
@@ -113,10 +115,12 @@ footer {
         .nav-link {
             padding: 38px 0;
             position: relative;
-transition: 0.2s ease;
-&:focus{
-    color: rgba(0,0,0,.5);
-}
+            transition: 0.2s ease;
+
+            &:focus {
+                color: rgba(0, 0, 0, .5);
+            }
+
             &.active {
                 color: rgba(0, 0, 0, .9);
 
@@ -127,7 +131,7 @@ transition: 0.2s ease;
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    background: $primaryColor;
+                    background: $secondaryColor;
                     transform-origin: bottom right;
                     transform: scaleX(1);
                 }
@@ -140,7 +144,7 @@ transition: 0.2s ease;
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                background: $primaryColor;
+                background: $secondaryColor;
                 transform-origin: bottom right;
                 transform: scaleX(0);
                 transition: transform .3s cubic-bezier(.75, 0, .175, 1);
@@ -148,6 +152,7 @@ transition: 0.2s ease;
 
             &:hover {
                 color: rgba(0, 0, 0, .9);
+
                 &::after {
                     transform-origin: bottom left;
                     transform: scaleX(1);
@@ -160,7 +165,7 @@ transition: 0.2s ease;
     .right_side {
         button {
             border: none;
-            background-color: $primaryColor;
+            background-color: $secondaryColor;
             color: #fff;
             animation: proposal_animation 1.5s infinite;
             padding: 7px 22px;
@@ -172,11 +177,11 @@ transition: 0.2s ease;
 
         @keyframes proposal_animation {
             from {
-                background-color: rgba($primaryColor, .6);
+                background-color: rgba($secondaryColor, .6);
             }
 
             to {
-                background-color: $primaryColor;
+                background-color: $secondaryColor;
 
             }
         }
@@ -226,9 +231,11 @@ transition: 0.2s ease;
             stroke-dashoffset: 200;
             stroke-dasharray: 200;
             stroke: $primaryColor;
-.smallDot{
-    fill: $primaryColor;
-}
+
+            .smallDot {
+                fill: $primaryColor;
+            }
+
             &.active {
 
 
@@ -262,17 +269,38 @@ transition: 0.2s ease;
         background-color: #f5f5f5;
         overflow: hidden;
 
+        &.active {
+            .sliderImg {
+                animation: sliderImgAnimation 0.5s forwards;
+            }
+
+            @keyframes sliderImgAnimation {
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+
         &:nth-child(3) {
+            .img {
+                background-image: url('../img/slider5.jpeg') !important;
+            }
+        }
+
+
+        &:nth-child(2) {
             .img {
                 background-image: url('../img/slider4.jpeg') !important;
             }
         }
 
         .sliderImg {
-            transform: rotateZ(20deg) translate(-150px, -50px);
+            transform: rotateZ(20deg) translateY(-100px);
             position: relative;
             height: 650px;
             width: 100%;
+            opacity: 0;
+            transform-origin: top;
 
             .imgContainer {
                 border-top-right-radius: 550px;
@@ -288,7 +316,7 @@ transition: 0.2s ease;
                     background-position: center;
                     height: 100%;
                     width: 100%;
-                    transform: rotateZ(-20deg) translateY(80px);
+                    transform: rotateZ(-20deg) translateY(100px);
                 }
             }
 
@@ -326,7 +354,6 @@ transition: 0.2s ease;
             }
 
             button {
-                font-weight: 700;
                 border: none;
                 background-color: $primaryColor;
                 color: #fff;
@@ -440,11 +467,11 @@ transition: 0.2s ease;
 
         h2 {
             text-transform: uppercase;
-            color: $primaryColor;
+            color: $secondaryColor;
             font-weight: 700;
             font-size: 20px;
             padding: 5px 0;
-            border-bottom: 2px solid $primaryColor;
+            border-bottom: 2px solid $secondaryColor;
             display: inline-block;
         }
     }
@@ -480,7 +507,7 @@ transition: 0.2s ease;
                 }
 
                 span {
-                    color: $primaryColor;
+                    color: $secondaryColor;
                     font-size: 16px;
                     font-weight: 600;
                 }
@@ -535,7 +562,7 @@ transition: 0.2s ease;
 }
 
 .callToAction {
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
 
     .callToActionImg {
         overflow: hidden;
@@ -569,7 +596,7 @@ transition: 0.2s ease;
 
         button {
             background-color: white;
-            color: $primaryColor;
+            color: $secondaryColor;
             font-weight: 800;
             font-size: 18px;
             border: 2px solid white;
@@ -582,7 +609,7 @@ transition: 0.2s ease;
             &::after {
                 content: '';
                 position: absolute;
-                background-color: $primaryColor;
+                background-color: $secondaryColor;
                 width: 100%;
                 height: 100%;
                 left: 0;
@@ -609,9 +636,7 @@ transition: 0.2s ease;
 }
 
 footer {
-    background-color: #f5f5f5;
-
-    h5 {
+    background-color: #f4f4f6 h5 {
         line-height: 30px;
         font-size: 20px;
         font-weight: 700;
@@ -699,11 +724,12 @@ footer {
 @media only screen and (max-width: 1200px) {
     .navbar {
         padding-top: 30px;
-        padding-bottom:30px;
-   .nav-item {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-   }
+        padding-bottom: 30px;
+
+        .nav-item {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
     }
 
     .load {
@@ -711,6 +737,18 @@ footer {
 
             .truckImg {
                 left: 20% !important;
+            }
+        }
+    }
+
+    .carousel {
+       
+
+        .sliderCaption {
+
+            h1,
+            p {
+                max-width: 350px !important;
             }
         }
     }
@@ -726,8 +764,6 @@ footer {
         }
 
         .carousel-item {
-
-
             .sliderImgCol {
                 &::after {
                     position: absolute;
@@ -856,21 +892,17 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .sliderImg {
-        .imgContainer {
-            .img {
-                transform: rotateZ(-20deg) translate(50px, 80px) !important;
-            }
-        }
 
         &::after {
             width: 80% !important;
             height: 400px !important;
-
         }
     }
 }
 
 @media only screen and (max-width: 576px) {
+   
+
     footer {
         .footerContent {
             margin-left: 0;

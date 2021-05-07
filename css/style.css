@@ -79,7 +79,7 @@ footer {
   border: none;
 }
 .proposal_modal .modal-content form button:hover {
-  background-color: #1e7e34;
+  background-color: #3CB4BD;
 }
 
 .navbar {
@@ -108,7 +108,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #37a2aa;
+  background: #F08F4D;
   transform-origin: bottom right;
   transform: scaleX(1);
 }
@@ -119,7 +119,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #37a2aa;
+  background: #F08F4D;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.75, 0, 0.175, 1);
@@ -133,7 +133,7 @@ footer {
 }
 .navbar .right_side button {
   border: none;
-  background-color: #37a2aa;
+  background-color: #F08F4D;
   color: #fff;
   -webkit-animation: proposal_animation 1.5s infinite;
           animation: proposal_animation 1.5s infinite;
@@ -144,18 +144,18 @@ footer {
 }
 @-webkit-keyframes proposal_animation {
   from {
-    background-color: rgba(55, 162, 170, 0.6);
+    background-color: rgba(240, 143, 77, 0.6);
   }
   to {
-    background-color: #37a2aa;
+    background-color: #F08F4D;
   }
 }
 @keyframes proposal_animation {
   from {
-    background-color: rgba(55, 162, 170, 0.6);
+    background-color: rgba(240, 143, 77, 0.6);
   }
   to {
-    background-color: #37a2aa;
+    background-color: #F08F4D;
   }
 }
 
@@ -238,14 +238,33 @@ footer {
   background-color: #f5f5f5;
   overflow: hidden;
 }
+.carousel .carousel-item.active .sliderImg {
+  -webkit-animation: sliderImgAnimation 0.5s forwards;
+          animation: sliderImgAnimation 0.5s forwards;
+}
+@-webkit-keyframes sliderImgAnimation {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sliderImgAnimation {
+  to {
+    opacity: 1;
+  }
+}
 .carousel .carousel-item:nth-child(3) .img {
+  background-image: url("../img/slider5.jpeg") !important;
+}
+.carousel .carousel-item:nth-child(2) .img {
   background-image: url("../img/slider4.jpeg") !important;
 }
 .carousel .carousel-item .sliderImg {
-  transform: rotateZ(20deg) translate(-150px, -50px);
+  transform: rotateZ(20deg) translateY(-100px);
   position: relative;
   height: 650px;
   width: 100%;
+  opacity: 0;
+  transform-origin: top;
 }
 .carousel .carousel-item .sliderImg .imgContainer {
   border-top-right-radius: 550px;
@@ -262,7 +281,7 @@ footer {
   background-position: center;
   height: 100%;
   width: 100%;
-  transform: rotateZ(-20deg) translateY(80px);
+  transform: rotateZ(-20deg) translateY(100px);
 }
 .carousel .carousel-item .sliderImg::after {
   position: absolute;
@@ -293,7 +312,6 @@ footer {
   font-size: 22px;
 }
 .carousel .carousel-item .sliderCaption button {
-  font-weight: 700;
   border: none;
   background-color: #37a2aa;
   color: #fff;
@@ -385,11 +403,11 @@ footer {
 }
 .park .title h2 {
   text-transform: uppercase;
-  color: #37a2aa;
+  color: #F08F4D;
   font-weight: 700;
   font-size: 20px;
   padding: 5px 0;
-  border-bottom: 2px solid #37a2aa;
+  border-bottom: 2px solid #F08F4D;
   display: inline-block;
 }
 .park .owl-carousel {
@@ -422,7 +440,7 @@ footer {
   margin-bottom: 8px;
 }
 .park .owl-carousel .item .caption span {
-  color: #37a2aa;
+  color: #F08F4D;
   font-size: 16px;
   font-weight: 600;
 }
@@ -468,7 +486,7 @@ footer {
 }
 
 .callToAction {
-  background-color: #37a2aa;
+  background-color: #F08F4D;
 }
 .callToAction .callToActionImg {
   overflow: hidden;
@@ -497,7 +515,7 @@ footer {
 }
 .callToAction .proposalCol button {
   background-color: white;
-  color: #37a2aa;
+  color: #F08F4D;
   font-weight: 800;
   font-size: 18px;
   border: 2px solid white;
@@ -510,7 +528,7 @@ footer {
 .callToAction .proposalCol button::after {
   content: "";
   position: absolute;
-  background-color: #37a2aa;
+  background-color: #F08F4D;
   width: 100%;
   height: 100%;
   left: 0;
@@ -530,13 +548,11 @@ footer {
 }
 
 footer {
-  background-color: #f5f5f5;
-}
-footer h5 {
-  line-height: 30px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  background-color: #f4f4f6 h5;
+  background-color-line-height: 30px;
+  background-color-font-size: 20px;
+  background-color-font-weight: 700;
+  background-color-margin-bottom: 10px;
 }
 footer .logo {
   font-size: 30px;
@@ -615,6 +631,11 @@ footer .footerBottom .social a i {
 
   .load .truckImgContainer .truckImg {
     left: 20% !important;
+  }
+
+  .carousel .sliderCaption h1,
+.carousel .sliderCaption p {
+    max-width: 350px !important;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -715,9 +736,6 @@ footer .footerBottom .social a i {
   }
 }
 @media only screen and (max-width: 600px) {
-  .sliderImg .imgContainer .img {
-    transform: rotateZ(-20deg) translate(50px, 80px) !important;
-  }
   .sliderImg::after {
     width: 80% !important;
     height: 400px !important;
